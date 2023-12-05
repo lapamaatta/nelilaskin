@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelilaskin</title>
+
+    <script src="Tehtävä3.js"></script>
+
+    <style>
+        body{
+            background-color: lightpink;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+            font-family: 'Roboto', sans-serif;
+        }
+        h2{
+            text-align: center;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+        }
+        h4{
+            text-align: right;
+            font-size: 30px;
+            font-family: 'Roboto', sans-serif;
+            opacity: 0.7;
+        }
+        .calcWindow{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            border: 15px white;
+            width: 300px;
+            background-color: white;
+        }
+        button{
+            width: 60px;
+            height: 60px;
+            font-size: 20px;
+        }
+        label{
+            font-size: 25px;
+            font-family: 'Roboto', sans-serif;
+        }
+        .calcButtons{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+        .inputFields{
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-bottom: 60px;
+        }
+    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <h1>Nelilaskin</h1>
+    <div class="calcWindow">
+        <h4 id="calcResult">Laskin</h4>
+    </div>
+    <div class="calcButtons">
+        <button type="button" name="plus" id="plus" onclick="SelectFunc(this.id)">+</button>
+        <button type="button" name="minus" id="minus" onclick="SelectFunc(this.id)">-</button>
+        <button type="button" name="multi" id="multi" onclick="SelectFunc(this.id)">*</button>
+        <button type="button" name="divide" id="divide" onclick="SelectFunc(this.id)">/</button>
+        <button type="button" name="equal" id="equal" onclick="Equals()">=</button>
+    </div>
+    <div class="inputFields">
+        <label for="number1">Luku 1</label>
+        <input type="number" name="number1" id="number1">
+        <label for="number2">Luku 2</label>
+        <input type="number" name="number2" id="number2">
+    </div>
+    <h2 id="verifText"></h2>
+</body>
+</html>
